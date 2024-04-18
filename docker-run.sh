@@ -2,7 +2,7 @@
 
 command="node index.js --redis_host=${REDIS_HOST} --db_host=${MONGO_HOST} \
   --db_user=${MONGO_USER} --db_password=${MONGO_PASSWORD} --db_port=${MONGO_PORT} \
-  --redis_port=${REDIS_PORT} --redis_password=${REDIS_PASSWORD} --port=${PORT} \
+  --redis_port=${REDIS_PORT} --redis_password=${REDIS_PASSWORD} --port=8080 \
   --allowed_origins=${ALLOWED_ORIGINS} \
   --jwt_secret=${JWT_SECRET} \
   --color \
