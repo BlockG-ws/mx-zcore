@@ -1,7 +1,7 @@
 #!/bin/bash
 
-command="node index.js --redis_host=${REDIS_HOST} --db_host=${MONGODB_HOST} \
-  --db_user=${MONGODB_USER} --db_password=${MONGODB_PASSWORD} --db_port=${MONGODB_PORT} \
+command="node index.js --redis_host=${REDIS_HOST} --db_host=${MONGO_HOST} \
+  --db_user=${MONGO_USER} --db_password=${MONGO_PASSWORD} --db_port=${MONGO_PORT} \
   --redis_port=${REDIS_PORT} --redis_password=${REDIS_PASSWORD} --port=${PORT} \
   --allowed_origins=${ALLOWED_ORIGINS} \
   --jwt_secret=${JWT_SECRET} \
