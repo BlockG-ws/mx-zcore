@@ -19,3 +19,4 @@ ENV TZ=Asia/Shanghai
 
 EXPOSE 2333
 CMD echo "MixSpace Server Image." && sh
+CMD bash ./docker-run.sh
