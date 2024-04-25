@@ -1,7 +1,8 @@
 #!/bin/bash
 
-command="node index.js \
-  --redis_host=redis --db_host=mongo \
+command="node index.js --redis_host=${REDIS_HOST} --db_host=${MONGO_HOST} \
+  --db_connection_string=${MONGO_CONNECTION_STRING} \
+  --redis_port=${REDIS_PORT} --redis_password=${REDIS_PASSWORD} \
   --allowed_origins=${ALLOWED_ORIGINS} \
   --jwt_secret=${JWT_SECRET} \
   --color \
